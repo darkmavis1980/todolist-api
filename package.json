@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.mjs",
   "scripts": {
@@ -16,6 +16,6 @@
     "redis": "^4.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.18"
   }
 }
