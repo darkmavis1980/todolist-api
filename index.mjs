@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { graphqlHTTP } from 'express-graphql';
+import { createHandler } from 'graphql-http/lib/use/express';
 import { buildSchema } from 'graphql';
 import { getData, addTask, removeTask } from './lib/redis.mjs';
 
@@ -82,7 +82,7 @@ const rootValue = {
 
 app.use(
  '/graphql',
- graphqlHTTP({
+ createHandler({
    schema,
    rootValue,
    graphiql: true
